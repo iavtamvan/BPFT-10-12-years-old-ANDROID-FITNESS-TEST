@@ -151,6 +151,22 @@ public class FitenessTestActivity extends AppCompatActivity {
                     intent.putExtra("NAMA_LENGKAP", namaLengkap);
                     intent.putExtra("USIA", usia);
                     intent.putExtra("JK", jk);
+
+                    intent.putExtra("REACTIONTEST", statusReactionTest);
+                    intent.putExtra("RIGHTFOOTBALANCE", statusRightFootBalance);
+                    intent.putExtra("LEFTFOOTBALANCE", statusLeftFootBalance);
+                    intent.putExtra("MEDICINEBALL", statusMedicineBall);
+                    intent.putExtra("FLEXIBILITY", statusFlexibility);
+                    intent.putExtra("SHORTSERVICE", statusShortService);
+                    intent.putExtra("LONGSERVICE", statusLongService);
+                    intent.putExtra("FOREHANDLOB", statusForehandLob);
+                    intent.putExtra("FOREHANDSMASH", statusForehandSmash);
+                    intent.putExtra("FOREHANDDROPSHOOT", statusForehandDropshoot);
+                    intent.putExtra("COORDINATION", statusCoordination);
+                    intent.putExtra("AGILITY", statusAgility);
+                    intent.putExtra("SPEED", statusSpeed);
+                    intent.putExtra("RAST", statusRast);
+                    intent.putExtra("DURABILITY", statusDurability);
                     startActivity(intent);
                 }
             }

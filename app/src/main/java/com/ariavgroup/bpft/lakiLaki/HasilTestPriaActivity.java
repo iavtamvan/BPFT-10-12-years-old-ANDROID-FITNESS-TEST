@@ -28,6 +28,24 @@ public class HasilTestPriaActivity extends AppCompatActivity {
     private int skorSpeed;
     private int skorRast;
     private int skorDurability;
+
+    private String statusReactionTest;
+    private String statusRightFootBalance;
+    private String statusLeftFootBalance;
+    private String statusMedicineBall;
+    private String statusFlexibility;
+    private String statusShortService;
+    private String statusLongService;
+    private String statusForehandLob;
+    private String statusForehandSmash;
+    private String statusForehandDropshoot;
+    private String statusCoordination;
+    private String statusAgility;
+    private String statusSpeed;
+    private String statusRast;
+    private String statusDurability;
+
+
     private String namaLengkap;
     private String usia;
     private String jk;
@@ -38,6 +56,36 @@ public class HasilTestPriaActivity extends AppCompatActivity {
     private TextView tvName;
     private TextView tvAge;
     private TextView tvGender;
+    private TextView tvHasilScoreReaction;
+    private TextView tvHasilConclusionReaction;
+    private TextView tvHasilScoreRightFootBalance;
+    private TextView tvHasilConclusionRightFootBalance;
+    private TextView tvHasilScoreLeftFootBalance;
+    private TextView tvHasilConclusionLeftFootBalance;
+    private TextView tvHasilScoreMedicineBall;
+    private TextView tvHasilConclusionMedicineBall;
+    private TextView tvHasilScoreFlexibilityTest;
+    private TextView tvHasilConclusionFlexibilityTest;
+    private TextView tvHasilScoreShortService;
+    private TextView tvHasilConclusionShortService;
+    private TextView tvHasilScoreLongService;
+    private TextView tvHasilConclusionLongService;
+    private TextView tvHasilScoreForehandLob;
+    private TextView tvHasilConclusionForehandLob;
+    private TextView tvHasilScoreForehandSmash;
+    private TextView tvHasilConclusionForehandSmash;
+    private TextView tvHasilScoreForehandDropshoot;
+    private TextView tvHasilConclusionForehandDropshoot;
+    private TextView tvHasilScoreCoordination;
+    private TextView tvHasilConclusionCoordination;
+    private TextView tvHasilScoreAgility;
+    private TextView tvHasilConclusionAgility;
+    private TextView tvHasilScoreSpeed;
+    private TextView tvHasilConclusionSpeed;
+    private TextView tvHasilScoreRast;
+    private TextView tvHasilConclusionRast;
+    private TextView tvHasilScoreEndurance;
+    private TextView tvHasilConclusionEndurance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,9 +112,58 @@ public class HasilTestPriaActivity extends AppCompatActivity {
         skorRast = getIntent().getIntExtra("SKORRAST", 0);
         skorDurability = getIntent().getIntExtra("SKORDURABILITY", 0);
 
+
+        statusReactionTest = getIntent().getStringExtra("REACTIONTEST");
+        statusRightFootBalance = getIntent().getStringExtra("RIGHTFOOTBALANCE");
+        statusLeftFootBalance = getIntent().getStringExtra("LEFTFOOTBALANCE");
+        statusMedicineBall = getIntent().getStringExtra("MEDICINEBALL");
+        statusFlexibility = getIntent().getStringExtra("FLEXIBILITY");
+        statusShortService = getIntent().getStringExtra("SHORTSERVICE");
+        statusLongService = getIntent().getStringExtra("LONGSERVICE");
+        statusForehandLob = getIntent().getStringExtra("FOREHANDLOB");
+        statusForehandSmash = getIntent().getStringExtra("FOREHANDSMASH");
+        statusForehandDropshoot = getIntent().getStringExtra("FOREHANDDROPSHOOT");
+        statusCoordination = getIntent().getStringExtra("COORDINATION");
+        statusAgility = getIntent().getStringExtra("AGILITY");
+        statusSpeed = getIntent().getStringExtra("SPEED");
+        statusRast = getIntent().getStringExtra("RAST");
+        statusDurability = getIntent().getStringExtra("DURABILITY");
+
         tvName.setText(namaLengkap);
         tvAge.setText(usia);
         tvGender.setText(jk);
+
+        tvHasilScoreReaction.setText(String.valueOf(skorReactionTest));
+        tvHasilScoreRightFootBalance.setText(String.valueOf(skorRightFootBalance));
+        tvHasilScoreLeftFootBalance.setText(String.valueOf(skorLeftFootBalance));
+        tvHasilScoreMedicineBall.setText(String.valueOf(skorMedicineBall));
+        tvHasilScoreFlexibilityTest.setText(String.valueOf(skorFlexibility));
+        tvHasilScoreShortService.setText(String.valueOf(skorShortService));
+        tvHasilScoreLongService.setText(String.valueOf(skorLongService));
+        tvHasilScoreForehandLob.setText(String.valueOf(skorForehandLob));
+        tvHasilScoreForehandSmash.setText(String.valueOf(skorForehandSmash));
+        tvHasilScoreForehandDropshoot.setText(String.valueOf(skorForehandDropshoot));
+        tvHasilScoreCoordination.setText(String.valueOf(skorCoordination));
+        tvHasilScoreAgility.setText(String.valueOf(skorAgility));
+        tvHasilScoreSpeed.setText(String.valueOf(skorSpeed));
+        tvHasilScoreRast.setText(String.valueOf(skorRast));
+        tvHasilScoreEndurance.setText(String.valueOf(skorDurability));
+
+        tvHasilConclusionReaction.setText(statusReactionTest);
+        tvHasilConclusionRightFootBalance.setText(statusRightFootBalance);
+        tvHasilConclusionLeftFootBalance.setText(statusLeftFootBalance);
+        tvHasilConclusionMedicineBall.setText(statusMedicineBall);
+        tvHasilConclusionFlexibilityTest.setText(statusFlexibility);
+        tvHasilConclusionShortService.setText(statusShortService);
+        tvHasilConclusionLongService.setText(statusLongService);
+        tvHasilConclusionForehandLob.setText(statusForehandLob);
+        tvHasilConclusionForehandSmash.setText(statusForehandSmash);
+        tvHasilConclusionForehandDropshoot.setText(statusForehandDropshoot);
+        tvHasilConclusionCoordination.setText(statusCoordination);
+        tvHasilConclusionAgility.setText(statusAgility);
+        tvHasilConclusionSpeed.setText(statusSpeed);
+        tvHasilConclusionRast.setText(statusRast);
+        tvHasilConclusionEndurance.setText(statusDurability);
 
 //        totalSkor = String.valueOf(skorReactionTest) + String.valueOf(skorRightFootBalance);
 
@@ -140,5 +237,35 @@ public class HasilTestPriaActivity extends AppCompatActivity {
         tvName = findViewById(R.id.tv_name);
         tvAge = findViewById(R.id.tv_age);
         tvGender = findViewById(R.id.tv_gender);
+        tvHasilScoreReaction = findViewById(R.id.tv_hasil_score_reaction);
+        tvHasilConclusionReaction = findViewById(R.id.tv_hasil_conclusion_reaction);
+        tvHasilScoreRightFootBalance = findViewById(R.id.tv_hasil_score_right_foot_balance);
+        tvHasilConclusionRightFootBalance = findViewById(R.id.tv_hasil_conclusion_right_foot_balance);
+        tvHasilScoreLeftFootBalance = findViewById(R.id.tv_hasil_score_left_foot_balance);
+        tvHasilConclusionLeftFootBalance = findViewById(R.id.tv_hasil_conclusion_left_foot_balance);
+        tvHasilScoreMedicineBall = findViewById(R.id.tv_hasil_score_medicine_ball);
+        tvHasilConclusionMedicineBall = findViewById(R.id.tv_hasil_conclusion_medicine_ball);
+        tvHasilScoreFlexibilityTest = findViewById(R.id.tv_hasil_score_flexibility_test);
+        tvHasilConclusionFlexibilityTest = findViewById(R.id.tv_hasil_conclusion_flexibility_test);
+        tvHasilScoreShortService = findViewById(R.id.tv_hasil_score_short_service);
+        tvHasilConclusionShortService = findViewById(R.id.tv_hasil_conclusion_short_service);
+        tvHasilScoreLongService = findViewById(R.id.tv_hasil_score_long_service);
+        tvHasilConclusionLongService = findViewById(R.id.tv_hasil_conclusion_long_service);
+        tvHasilScoreForehandLob = findViewById(R.id.tv_hasil_score_forehand_lob);
+        tvHasilConclusionForehandLob = findViewById(R.id.tv_hasil_conclusion_forehand_lob);
+        tvHasilScoreForehandSmash = findViewById(R.id.tv_hasil_score_forehand_smash);
+        tvHasilConclusionForehandSmash = findViewById(R.id.tv_hasil_conclusion_forehand_smash);
+        tvHasilScoreForehandDropshoot = findViewById(R.id.tv_hasil_score_forehand_dropshoot);
+        tvHasilConclusionForehandDropshoot = findViewById(R.id.tv_hasil_conclusion_forehand_dropshoot);
+        tvHasilScoreCoordination = findViewById(R.id.tv_hasil_score_coordination);
+        tvHasilConclusionCoordination = findViewById(R.id.tv_hasil_conclusion_coordination);
+        tvHasilScoreAgility = findViewById(R.id.tv_hasil_score_agility);
+        tvHasilConclusionAgility = findViewById(R.id.tv_hasil_conclusion_agility);
+        tvHasilScoreSpeed = findViewById(R.id.tv_hasil_score_speed);
+        tvHasilConclusionSpeed = findViewById(R.id.tv_hasil_conclusion_speed);
+        tvHasilScoreRast = findViewById(R.id.tv_hasil_score_rast);
+        tvHasilConclusionRast = findViewById(R.id.tv_hasil_conclusion_rast);
+        tvHasilScoreEndurance = findViewById(R.id.tv_hasil_score_endurance);
+        tvHasilConclusionEndurance = findViewById(R.id.tv_hasil_conclusion_endurance);
     }
 }

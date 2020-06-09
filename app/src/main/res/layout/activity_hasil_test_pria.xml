@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/bg_1"
+    android:orientation="vertical"
     tools:context=".lakiLaki.HasilTestPriaActivity">
 
     <ImageView
@@ -13,180 +13,858 @@
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:src="@drawable/icon_bg_remove"/>
+        android:src="@drawable/icon_bg_remove" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        app:cardElevation="8dp"
-        app:cardCornerRadius="8dp">
-        <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Final test results"
-                android:gravity="center"
-                android:textColor="@android:color/black"
-                android:textStyle="bold"
-                android:textSize="18dp"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:background="@android:color/black"/>
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
                 android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Final test results"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@android:color/black" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="4dp"
-                    android:orientation="horizontal">
-                    <TextView
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Name"
-                        android:textColor="@android:color/black"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:textSize="11dp"/>
-                    <TextView
+                        android:layout_marginBottom="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Name"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Name"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Name"
-                        android:id="@+id/tv_name"
-                        android:textColor="@android:color/darker_gray"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:textSize="11dp"/>
+                        android:layout_marginBottom="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Age"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_age"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Age"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Gender"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Age"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="horizontal">
-                    <TextView
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Age"
-                        android:textColor="@android:color/black"
-                        android:textStyle="bold"
                         android:layout_weight="1"
-                        android:textSize="11dp"/>
-                    <TextView
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Total Score"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/tv_score"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center"
+                            android:text="Score"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="24dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Age"
-                        android:id="@+id/tv_age"
-                        android:textColor="@android:color/darker_gray"
-                        android:textStyle="bold"
                         android:layout_weight="1"
-                        android:textSize="11dp"/>
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/black"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/tv_kesimpulan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="24dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="4dp"
-                    android:orientation="horizontal">
+                    android:layout_margin="4dp"
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Gender"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Test Details"
                         android:textColor="@android:color/black"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:textSize="11dp"/>
-                    <TextView
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Age"
-                        android:id="@+id/tv_gender"
-                        android:textColor="@android:color/darker_gray"
-                        android:textStyle="bold"
-                        android:layout_weight="1"
-                        android:textSize="11dp"/>
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="Test Item"
+                            android:textColor="@android:color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="Result"
+                            android:textColor="@android:color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/black"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Reaction Test"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold|italic" 
+                            android:background="@drawable/rectangle_shape"/>
+
+                        <TextView
+                            android:id="@+id/tv_hasil_score_reaction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="result"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hasil_conclusion_reaction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Right Foot Balance Test"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold|italic" 
+                            android:background="@drawable/rectangle_shape"/>
+
+                        <TextView
+                            android:id="@+id/tv_hasil_score_right_foot_balance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="result"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hasil_conclusion_right_foot_balance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Left Foot Balance Test"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold|italic" 
+                            android:background="@drawable/rectangle_shape"/>
+
+                        <TextView
+                            android:id="@+id/tv_hasil_score_left_foot_balance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="result"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hasil_conclusion_left_foot_balance"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Medicine Ball Test (Strength)"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold|italic" 
+                            android:background="@drawable/rectangle_shape"/>
+
+                        <TextView
+                            android:id="@+id/tv_hasil_score_medicine_ball"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="result"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hasil_conclusion_medicine_ball"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Flexibility Test"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold|italic" 
+                            android:background="@drawable/rectangle_shape"/>
+
+                        <TextView
+                            android:id="@+id/tv_hasil_score_flexibility_test"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="result"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hasil_conclusion_flexibility_test"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Short Service Test"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold|italic" 
+                            android:background="@drawable/rectangle_shape"/>
+
+                        <TextView
+                            android:id="@+id/tv_hasil_score_short_service"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="result"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hasil_conclusion_short_service"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Long Service Test"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold|italic" 
+                            android:background="@drawable/rectangle_shape"/>
+
+                        <TextView
+                            android:id="@+id/tv_hasil_score_long_service"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="result"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hasil_conclusion_long_service"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Forehand Lob Test"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold|italic" 
+                            android:background="@drawable/rectangle_shape"/>
+
+                        <TextView
+                            android:id="@+id/tv_hasil_score_forehand_lob"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="result"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hasil_conclusion_forehand_lob"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Forehand Smash Test"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold|italic" 
+                            android:background="@drawable/rectangle_shape"/>
+
+                        <TextView
+                            android:id="@+id/tv_hasil_score_forehand_smash"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="result"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hasil_conclusion_forehand_smash"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Forehand Dropshoot Test"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold|italic" 
+                            android:background="@drawable/rectangle_shape"/>
+
+                        <TextView
+                            android:id="@+id/tv_hasil_score_forehand_dropshoot"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="result"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hasil_conclusion_forehand_dropshoot"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Coordination Test"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold|italic" 
+                            android:background="@drawable/rectangle_shape"/>
+
+                        <TextView
+                            android:id="@+id/tv_hasil_score_coordination"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="result"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hasil_conclusion_coordination"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Agility Test"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold|italic" 
+                            android:background="@drawable/rectangle_shape"/>
+
+                        <TextView
+                            android:id="@+id/tv_hasil_score_agility"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="result"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hasil_conclusion_agility"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Speed Test"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold|italic" 
+                            android:background="@drawable/rectangle_shape"/>
+
+                        <TextView
+                            android:id="@+id/tv_hasil_score_speed"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="result"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hasil_conclusion_speed"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Rast Test"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold|italic" 
+                            android:background="@drawable/rectangle_shape"/>
+
+                        <TextView
+                            android:id="@+id/tv_hasil_score_rast"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="result"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hasil_conclusion_rast"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Endurance Test"
+                            android:textColor="@android:color/black"
+                            android:textSize="11dp"
+                            android:textStyle="bold|italic" 
+                            android:background="@drawable/rectangle_shape"/>
+
+                        <TextView
+                            android:id="@+id/tv_hasil_score_endurance"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="result"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_hasil_conclusion_endurance"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle_shape"
+                            android:gravity="center"
+                            android:text="conclusion"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="11dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_repeat_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_green_dark"
+                    android:text="Repeat the test"
+                    android:textColor="@android:color/white" />
+
+
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Score"
-                        android:gravity="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="14dp"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Score"
-                        android:gravity="center"
-                        android:layout_marginTop="20dp"
-                        android:textColor="@android:color/holo_red_light"
-                        android:id="@+id/tv_score"
-                        android:textStyle="bold"
-                        android:layout_marginBottom="20dp"
-                        android:textSize="24dp"/>
-
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Conclusion"
-                        android:gravity="center"
-                        android:textColor="@android:color/black"
-                        android:textSize="14dp"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Conclusion"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="20dp"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:textColor="@android:color/holo_red_light"
-                        android:id="@+id/tv_kesimpulan"
-                        android:textSize="24dp"/>
-                </LinearLayout>
-            </LinearLayout>
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Repeat the test"
-                android:textColor="@android:color/white"
-                android:background="@android:color/holo_green_dark"
-                android:id="@+id/btn_repeat_test"/>
-
-
-        </LinearLayout>
+        </ScrollView>
     </androidx.cardview.widget.CardView>
 
 
