@@ -546,16 +546,16 @@ public class FitenessTestActivity extends AppCompatActivity {
                 if (charSequence.toString().isEmpty()) {
                     edtForehandDropshoot.setError("Fill First");
                 } else {
-                    if (Double.parseDouble(String.valueOf(charSequence)) <= 21) {
+                    if (Double.parseDouble(String.valueOf(charSequence)) <= 17) {
                         statusForehandDropshoot = "Very Poor";
                         skorForehandDropshoot = 1;
-                    } else if (Double.parseDouble(String.valueOf(charSequence)) >= 22 && Double.parseDouble(String.valueOf(charSequence)) <= 29) {
+                    } else if (Double.parseDouble(String.valueOf(charSequence)) >= 18 && Double.parseDouble(String.valueOf(charSequence)) <= 25) {
                         statusForehandDropshoot = "Poor";
                         skorForehandDropshoot = 2;
-                    } else if (Double.parseDouble(String.valueOf(charSequence)) >= 30 && Double.parseDouble(String.valueOf(charSequence)) <= 37) {
+                    } else if (Double.parseDouble(String.valueOf(charSequence)) >= 26 && Double.parseDouble(String.valueOf(charSequence)) <= 33) {
                         statusForehandDropshoot = "Medium";
                         skorForehandDropshoot = 3;
-                    } else if (Double.parseDouble(String.valueOf(charSequence)) >= 38 && Double.parseDouble(String.valueOf(charSequence)) <= 45) {
+                    } else if (Double.parseDouble(String.valueOf(charSequence)) >= 34 && Double.parseDouble(String.valueOf(charSequence)) <= 41) {
                         statusForehandDropshoot = "Good";
                         skorForehandDropshoot = 4;
                     } else {
